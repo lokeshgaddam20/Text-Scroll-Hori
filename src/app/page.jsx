@@ -1,4 +1,5 @@
 'use client'
+import styles from './style.module.scss'
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Picture1 from '../../public/images/1.jpg'
 import Picture2 from '../../public/images/2.jpg'
@@ -30,15 +31,15 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       <div className='h-[100vh]'>
-        <p className='text-white'>Scroll for the Effect.</p>
+        <p className={styles.div}>Scroll for the Effect.</p>
       </div>
       <div ref={container}>
         <Slide src={Picture1} direction={'left'} left={"-40%"} progress={scrollYProgress}/>
         <Slide src={Picture2} direction={'right'} left={"-25%"} progress={scrollYProgress}/>
         <Slide src={Picture3} direction={'left'}  left={"-75%"} progress={scrollYProgress}/>
-      </div>
+      </div>  
       <div className='h-[100vh]'>
-        <p className='text-white'>Scroll for the Effect.</p>
+        <p className={styles.div}>End of the Effect.</p>
       </div>
     </main>
   );

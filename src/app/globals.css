@@ -7,6 +7,11 @@
   src: url('../../public/fonts/PPNeueWorld-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Avant Garde Book BT';
+  src: url('../../public/fonts/AVGARDD_2.woff');
+}
+
 body{
   font-family: 'Regular';
   background-color: rgb(18, 18, 18);
